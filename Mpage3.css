@@ -1,0 +1,103 @@
+body {
+    background-color: #ffffff;
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+     
+     }
+     
+   
+     
+  
+     .bg-img {
+        /* The image used */
+        background-image: url("bg3.jpeg");
+      
+        min-height: 250px;
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        
+      
+        /* Needed to position the navbar */
+        position: relative;
+      }
+     
+     .sample-header {
+       position: relative;
+       top: 0%;
+       right: 1%;
+       bottom: 0;
+       left: 1%;
+     
+     }
+     .sample-header-section {
+       position: relative;
+       padding: 1% 0 1%;
+       max-width: 640px;
+       margin-left: auto;
+       margin-right: auto;
+       color: rgb(0, 0, 0);
+       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+       font-family: "Montserrat", sans-serif;
+     }
+     .bg-img {
+        /* The image used */
+        background-image: url("bg3.jpeg");
+      
+        min-height: 100px;
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        
+      
+        /* Needed to position the navbar */
+        position: relative;
+      }
+      
+      img {
+        position:relative; 
+          top:0; 
+          left: 5px;
+          top: 40px;
+          bottom: 0px;
+      
+        border-radius: 60%;
+      
+        height: 210px;
+      }
+      h1 {
+        text-align: center;
+        font-weight: 750;
+        font-size: 500%;
+        color: #000000;
+        padding: 0%;
+      }
+     hr {
+       display: block;
+       margin-top: 0.5em;
+       margin-bottom: 0.5em;
+       margin-left: auto;
+       margin-right: auto;
+       border-style:dashed;
+       border-width: 1px;
+     }
+     h2 {
+       font-weight: 400;
+       text-align: center;
+       font-size: 40px;
+     }
+     hr {
+       display: block;
+       margin-top: 0.5em;
+       margin-bottom: 0.5em;
+       margin-left: auto;
+       margin-right: auto;
+       border-style: inset;
+       border-width: 1px;
+     }
+    

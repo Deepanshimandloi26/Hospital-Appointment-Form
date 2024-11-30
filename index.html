@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<title>Hospital Appointment Application</title>
+<link rel="stylesheet" href="Mpage1.css">
+</head>
+<body>
+
+  <div class="bg-img" >
+    <button class="Felement" onclick="myFunction()">Mode change</button>
+    <h1>UEC HOSPITAL  <img src="logo.jpg" alt="logo"></h1>
+     <hr>
+      <h2>MEDICAL SERVICES 
+        YOU CAN TRUST & RELAY ON
+      </h2>
+      <hr>
+      <div class="topnav">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#news">News</a>
+        <a href="#home">Home</a>
+       
+
+      </div>
+      
+  </div>
+
+<div class="container">
+  <h3>Hospital Appointment Form</h3>
+  <h4>Fill the form below and we will get back soon to you for more updates and plan your appointment.</h4>
+  <form method="post" action="connect.php" id="appointmentForm">    
+     <div class="form-group">
+      <label for="full_name">Full Name:</label>
+      <input type="text" id="full_name" name="full_name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="date_of_birth">Age</label>
+      <input type="number" step="1" id="date_of_birth" name="date_of_birth">
+    </div>
+   
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required >
+    </div>
+   
+    <div class="form-group">
+      <label for="location_name">Address</label>
+      <input type="text" id="location_name" name="location_name" required>
+    </div>
+    <div class="form-group">
+      <label for="app_id">Appointment ID:</label>
+      <input type="app_id" id="app_id" name="app_id" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Clinic</label>
+      <select id="description" name="description" required>
+        <option value="Mission Bay-CLIN-1">Mission Bay-CLIN-1</option>
+        <option value="Mission Bay-CLIN-2">Mission Bay-CLIN-2</option>
+        <option value="Mission Bay-CLIN-3">Mission Bay-CLIN-3</option>
+       </select>
+    </div>
+    <div class="form-group">
+      <label for="state">state</label>
+      <select id="state" name="state" required>
+        <option value="CA">CA</option>
+        <option value="NULL">RI</option>
+        <option value="NULL">PA</option>
+        <option value="NULL">NY</option>
+        <option value="NULL">MD </option>
+
+       </select>
+    </div>
+    <div class="form-group">
+      <label for="appt_type">Appointment Type</label>
+      <select id="appt_type" name="appt_type" required>
+        <option value="D">D</option>
+        <option value="U">U</option>
+       </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="workflow_status">Workflow Status</label>
+      <select id="workflow_status" name="workflow_status" required>
+        <option value="Booked">Booked</option>
+        <option value="MK">Mk</option>
+        <option value="kept">Kept</option>
+        <option value="AF">Af</option>
+       </select>
+    </div>
+    <div class="form-group">
+      <label for="department">Which department would you like to get an appointment from?</label>
+      <select id="department" name="department" required>
+        <option value="cardiology">Cardiology</option>
+        <option value="neurology">Neurology</option>
+        <option value="orthopedics">Orthopedics</option>
+       </select>
+    </div>
+    <div class="form-group">
+      <label for="category">Location</label>
+      <select id="category" name="category" required>
+        <option value="Mission Bay Planned Parenthood">Mission Bay Planned Parenthood</option>
+        <option value="Corona Health Center Planned Parenthood">Corona Health Center Planned Parenthood</option>
+        <option value="City Heights Planned Parenthood">City Heights Planned Parenthood</option>
+        <option value="Coachella Valley Planned Parenthood">Coachella Valley Planned Parenthood</option>
+        <option value="Vista Planned Parenthood">Vista Planned Parenthood</option>
+       </select>
+    </div>
+    <div class="form-group">
+      <label for="event_short">Event Short</label>
+      <select id="event_short" name="event_short" required>
+         </option>
+        <option value="BLO">BLO</option>
+        <option value="COL">COL</option>
+        <option value="WIM">WIM</option>
+        <option value="PME">PME</option>
+        <option value="FPO">FPO</option>
+        <option value="MAB">MAB</option>
+       </select>
+    </div>
+
+    <div class="form-group">
+      <label for="appointment_procedure">which procedure do you want to make an appointment for?</label>
+      <select id="appointment_procedure" name="appointment_procedure" required>
+        
+        <option value="checkup">Check-up</option>
+        <option value="report analysis">Report Analysis</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="begintime">Begin Time</label>
+      <select id="begintime" name="begintime" required>
+        
+        <option value="800">800</option>
+        <option value="840">840</option>
+        <option value="report analysis">900</option>
+        <option value="950">950</option>
+        <option value="1000">1000</option>
+        <option value="1030">1030</option>
+
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="appt_date">Appointment Date:</label>
+      <input type="appt_date" id="appt_date" name="appt_date" required>
+    </div>
+    <div class="form-group">
+      <label for="preferred_time">Preferred Time:</label>
+      <input type="time" id="preferred_time" name="preferred_time" required>
+    </div>
+    <div class="form-group">
+      <label for="add_info">Aditional Information</label>
+      <input type="text" id="add_info" name="add_info" required>
+    </div>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+<script>
+  document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+    // You can add your logic to handle form submission here
+    // For example, you can collect form data and send it to a server using AJAX
+    let formData = new FormData(this);
+    let data = {};
+    for (let [key, value] of formData.entries()) {
+      data[key] = value;
+    }
+    console.log(data); // Just an example, you can replace this with your logic
+    alert("Form submitted successfully!");
+    fetch("http://127.0.0.1:5000/store_entry", {
+  method: "POST",
+  body: formData
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+    this.reset(); // Reset form after submission
+  });
+  
+</script>
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="testhospital.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<footer>
+<div class="footer">
+<div class="row">
+
+
+</div>
+
+<div class="row">
+<ul>
+  <li><a href="#">Address: 17 Scheme Dewas Road Ujjain (M.P) 456001 </a></li>
+<li><a href="#">Contact us : +913427665983</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+
+</ul>
+</div>
+
+<div class="row"> 
+ 
+  UEC Hospital 2024  © - All rights reserved.
+ 
+</div>
+</div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

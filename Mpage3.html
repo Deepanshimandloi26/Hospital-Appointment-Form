@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hospital Employee Login</title>
+<link rel="stylesheet" href="Mpage2.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="bg-img" >
+        <h1>UEC HOSPITAL  <img src="logo.jpg" alt="logo"></h1>
+        <hr>
+         <h2>MEDICAL SERVICES 
+           YOU CAN TRUST & RELY ON
+         </h2>
+         <hr>
+         <form id="appointmentForm">
+            <div class="container">
+              <br> <button type="submit">Download result</button>
+            </div>
+          </form>
+</body>
+<script>
+document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent default form submission
+  // You can add your logic to handle form submission here
+  // For example, you can collect form data and send it to a server using AJAX
+  fetch("http://127.0.0.1:5000/download", {
+    method: "GET"
+  })
+  .then((response) => response.json())
+  .then((json) => {
+    console.log(json); 
+    if (json.length > 0)  {   
+        window.location.href = "http://127.0.0.1:8080/test.csv"; 
+    }
+  });
+
+  this.reset();
+});
+</script>
+</html>
+""
